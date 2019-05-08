@@ -1,0 +1,35 @@
+[user]
+	name = Rich Lewis
+	email = 2941720+lewisacidic@users.noreply.github.com
+	signingkey = 3879CC0B8FDE811F
+[credential]
+	helper = !pass-git-helper $@
+[commit]
+	gpgsign = true
+[url "https://github.com/"]
+	insteadOf = git://github.com/
+	insteadOf = git@github.com:
+	insteadOf = github:
+	insteadOf = gh:
+[url "https://gitlab.com/"]
+	insteadOf = git://gitlab.com/
+	insteadOf = git@gitlab.com:
+	insteadOf = gitlab:
+	insteadOf = gl:
+[url "https://bitbucket.org/"]
+	insteadOf = git://bitbucket.org/
+	insteadOf = git@bitbucket.org:
+	insteadOf = bitbucket:
+	insteadOf = bb:
+[url "https://github.com/lewisacidic/"]
+	insteadOf = gh:me/
+[core]
+	editor = nvim
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[format]
+	pretty = %C(auto)%h%Creset %Cblue%an%Creset %C(magenta)[%G?]%Creset: %s %Cgreen(%ar)%Creset
+
