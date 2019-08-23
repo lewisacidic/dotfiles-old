@@ -1,0 +1,6 @@
+channels:
+  - lewisacidic
+  - defaults
+  - conda-forge
+always_yes: True
+
